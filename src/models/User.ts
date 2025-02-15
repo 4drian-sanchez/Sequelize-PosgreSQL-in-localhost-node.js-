@@ -4,17 +4,19 @@ import { Table, Model, Column, DataType } from 'sequelize-typescript';
   tableName: 'users',
   timestamps: true, // Crea createdAt y updatedAt automáticos
 })
-export class User extends Model {
+class User extends Model {
   @Column({
     type: DataType.STRING,
     allowNull: false,
   })
-  name!: string;
+   declare name: string
 
   @Column({
     type: DataType.STRING,
     allowNull: false,
     unique: true,
   })
-  email!: string;
+  declare email: string
 }
+
+export default User
