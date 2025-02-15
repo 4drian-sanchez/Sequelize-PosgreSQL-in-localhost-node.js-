@@ -1,6 +1,6 @@
-import express from 'express';
-import 'reflect-metadata'; // Importación obligatoria
-import { sequelize, testConnection } from './config/db';
+import express from 'express'
+import 'reflect-metadata' // Importación obligatoria
+import { sequelize, testConnection } from './config/db'
 
 const app = express();
 
